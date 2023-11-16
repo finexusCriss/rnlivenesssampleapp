@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bringswiftuitorn-dev-121704-authRole",
+      "UnauthRoleArn": "arn:aws:iam::258196078983:role/amplify-bringswiftuitorn-dev-121704-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::258196078983:role/amplify-bringswiftuitorn-dev-121704-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-bringswiftuitorn-dev-121704-deployment",
+      "UnauthRoleName": "amplify-bringswiftuitorn-dev-121704-unauthRole",
+      "StackName": "amplify-bringswiftuitorn-dev-121704",
+      "StackId": "arn:aws:cloudformation:eu-north-1:258196078983:stack/amplify-bringswiftuitorn-dev-121704/ad7de320-82a4-11ee-a107-066b65f51f56",
+      "AmplifyAppId": "d1trpy7apmynzx"
+    },
+    "categories": {
+      "auth": {
+        "bringswiftuitorn55e91e7555e91e75": {},
+        "userPoolGroups": {}
+      }
+    }
+  }
+}
