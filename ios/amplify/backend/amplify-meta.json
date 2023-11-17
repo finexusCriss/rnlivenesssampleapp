@@ -1,0 +1,83 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bringswiftuitorn-dev-121704-authRole",
+      "UnauthRoleArn": "arn:aws:iam::258196078983:role/amplify-bringswiftuitorn-dev-121704-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::258196078983:role/amplify-bringswiftuitorn-dev-121704-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-bringswiftuitorn-dev-121704-deployment",
+      "UnauthRoleName": "amplify-bringswiftuitorn-dev-121704-unauthRole",
+      "StackName": "amplify-bringswiftuitorn-dev-121704",
+      "StackId": "arn:aws:cloudformation:eu-north-1:258196078983:stack/amplify-bringswiftuitorn-dev-121704/ad7de320-82a4-11ee-a107-066b65f51f56",
+      "AmplifyAppId": "d1trpy7apmynzx"
+    }
+  },
+  "auth": {
+    "userPoolGroups": {
+      "service": "Cognito-UserPool-Groups",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "bringswiftuitorn55e91e7555e91e75",
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID",
+            "IdentityPoolId"
+          ]
+        }
+      ],
+      "lastPushTimeStamp": "2023-11-14T05:04:50.317Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bringswiftuitorn-dev-121704-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
+        "logicalId": "authuserPoolGroups"
+      },
+      "output": {
+        "thirdAttemptUserPoolGroupRole": "arn:aws:iam::258196078983:role/eu-north-1_NQzPLMJA8-thirdAttemptUserPoolGroupRole"
+      },
+      "lastPushDirHash": "Mjc31/uvmy7b8/smJgcnIDhxLBY="
+    },
+    "bringswiftuitorn55e91e7555e91e75": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bringswiftuitorn-dev-121704-deployment/amplify-cfn-templates/auth/bringswiftuitorn55e91e7555e91e75-cloudformation-template.json",
+        "logicalId": "authbringswiftuitorn55e91e7555e91e75"
+      },
+      "lastPushTimeStamp": "2023-11-14T05:04:50.317Z",
+      "output": {
+        "UserPoolId": "eu-north-1_NQzPLMJA8",
+        "AppClientIDWeb": "3noto1ju6ri2valdhgf0p8gtds",
+        "AppClientID": "22hmkc8jegmpfjm4tok2bq1ln",
+        "IdentityPoolId": "eu-north-1:e0d2f8d7-15b5-4d6f-9917-7c8b696c9733",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:258196078983:userpool/eu-north-1_NQzPLMJA8",
+        "IdentityPoolName": "bringswiftuitorn55e91e75_identitypool_55e91e75__dev",
+        "UserPoolName": "bringswiftuitorn55e91e75_userpool_55e91e75"
+      },
+      "lastPushDirHash": "LTvbzn/qeRkvOrBUW0uxMa/uXvs="
+    }
+  }
+}
